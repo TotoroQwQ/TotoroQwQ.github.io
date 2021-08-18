@@ -8,7 +8,7 @@
       <link href="/test2/"/>
       <url>/test2/</url>
       
-        <content type="html"><![CDATA[<p><img src="/test2/%E7%BE%BD%E5%B7%9D%E7%BF%BC.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/test2/%E7%BE%BD%E5%B7%9D%E7%BF%BC.jpg"></p><p>理想老婆！！！</p>]]></content>
       
       
       
@@ -21,13 +21,23 @@
       <link href="/gris/"/>
       <url>/gris/</url>
       
-        <content type="html"><![CDATA[<h2 id="Gris"><a href="#Gris" class="headerlink" title="Gris"></a>Gris</h2><h3 id="自我"><a href="#自我" class="headerlink" title="自我"></a>自我</h3><p><img src="C:\Users\chens\Desktop\Totoro.jpg"></p><p>我从梦中醒来。  </p><p>破败的楼宇环绕四周，碎裂的石像散落一地。<br>天空茫茫一片，没有飞鸟横渡，没有日月星辰，没有颜色。  </p><p>我想呐喊，却发不出一丝声音。<br>我知道，我要寻回这漫天的星辰，填满空洞的天空。  </p><p>穿过风暴，我寻回太阳和大地的红色。<br>盈飞林间，我用绿色重新点缀森林。<br>潜游海洋，我将蓝色还给天空和大海。<br>拜访冰川，我释放被封存的月光。  </p><p>世界慢慢有了它的色彩，可那些破碎的石像依旧那么悲伤，那么痛苦。<br>就好像，<br>我自己。  </p><p>我张大嘴，没有声音。  </p><p>四散的星辰，在我手中慢慢汇聚。一些温暖的力量涌进身体。<br>什么东西从我的喉中涌出，<br>是天空的明媚，<br>是大地的厚重，<br>是森林的活力，<br>是海洋的灵动，<br>是歌声。<br>于是鲜花盛开，生动了楼宇。  </p><p>我穿过天空，大海，花丛，来到楼宇尽头。<br>那是一尊巨大的、零碎的、悲伤的，<br>我。  </p><p>歌声流出，愈合着雕像。<br>黑暗从裂痕之间涌出，吞噬着我。<br>还给了我。</p><p>那是它承受的悲伤和痛苦。<br>那是无尽的虚无和破败。  </p><p>不，<br>有光。<br>是一颗星辰。<br>是漫天星空。<br>是缤纷的世界。  </p><pre><code>ps:  联想到一首诗  从童年起我便独自一人  照顾着  历代的星辰  --白鹤林</code></pre>]]></content>
+        <content type="html"><![CDATA[<p><img src="/gris/sing.jpg"></p><h3 id="自我"><a href="#自我" class="headerlink" title="自我"></a>自我</h3><p>我从梦中醒来。  </p><p>破败的楼宇环绕四周，碎裂的石像散落一地。<br>天空茫茫一片，没有飞鸟横渡，没有日月星辰，没有颜色。  </p><p>我想呐喊，却发不出一丝声音。<br>我知道，我要寻回这漫天的星辰，填满空洞的天空。  </p><p>穿过风暴，我寻回太阳和大地的红色。<br>盈飞林间，我用绿色重新点缀森林。<br>潜游海洋，我将蓝色还给天空和大海。<br>拜访冰川，我释放被封存的月光。  </p><p>世界慢慢有了它的色彩，可那些破碎的石像依旧那么悲伤，那么痛苦。<br>就好像，<br>我自己。  </p><p>我张大嘴，没有声音。  </p><p>四散的星辰，在我手中慢慢汇聚。一些温暖的力量涌进身体。<br>什么东西从我的喉中涌出，<br>是天空的明媚，<br>是大地的厚重，<br>是森林的活力，<br>是海洋的灵动，<br>是歌声。<br>于是鲜花盛开，生动了楼宇。  </p><p>我穿过天空，大海，花丛，来到楼宇尽头。<br>那是一尊巨大的、零碎的、悲伤的，<br>我。  </p><!-- <iframe height=500 width=900 src="1.mp4"> --><p><video src="1.mp4" type="video/mp4" controls="controls" preload="auto" width="890" height="500"><br></video></p><p>歌声流出，愈合着雕像。<br>黑暗从裂痕之间涌出，吞噬着我。<br>还给了我。</p><p>那是它承受的悲伤和痛苦。<br>那是无尽的虚无和破败。  </p><p>不，<br>有光。<br>是一颗星辰。<br>是漫天星空。<br>是缤纷的世界。  </p><pre><code>ps:  联想到一首诗  从童年起我便独自一人  照顾着  历代的星辰  --白鹤林</code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> Gmae </category>
+          
+          <category> 随笔 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> game 随笔 </tag>
+            <tag> game </tag>
+            
+            <tag> 随笔 </tag>
             
         </tags>
       
@@ -36,13 +46,19 @@
     
     
     <entry>
-      <title>test1</title>
+      <title>Today I begin a new life</title>
       <link href="/test1/"/>
       <url>/test1/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="《Today-I-begin-a-new-life》"><a href="#《Today-I-begin-a-new-life》" class="headerlink" title="《Today I begin a new life》"></a>《Today I begin a new life》</h2><p>　　Today I shed my old skin which hath, too long, suffered the bruises of failure and the wounds of mediority.</p><p>　　Today I am born anew and my birthplace is a vineyard where there is fruit for all.</p><p>　　Today I will pluck grapes of wisdom from the tallest and fullest vines in the vineyard,for these were planted by the wisest of my profession who have come before me,generation upon generation.</p><p>　　Today I will savor the taste of grapes from these vines and verily I will swallow the seed of success buried in each and new life will sprout within me.</p><p>　　The career I have chosen is laden with opportunity yet it is fraught with heartbreak and despair and the bodies of those who have failed, were they piled one atop another, would cast a shadow down upon all the pyramids of the earth.</p><p>　　Yet I will not fail, as the others, for in my hands I now hold the charts which will guide through perilous waters to shores which only yesterday seemed but a dream.</p><p>　　Failure no longer will be my payment for struggle. Just as nature made no provision for my body to tolerate pain neither has it made any provision for my life to suffer failure. Failure, like pain, is alien to my life. In the past I accepted it as I accepted pain. Now I reject it and I am prepared for wisdom and principles which will guide me out of the shadows into the sunlight of wealth, position, and happiness far beyond my most extravagant dreams until even the golden apples in the Garden of Hesperides will seem no more than my just reward.</p><p>　　Time teaches all things to him who lives forever but I have not the luxury of eternity. Yet within my allotted time I must practice the art of patience for nature acts never in haste. To create the olive, king of all trees, a hundred years is required. An onion plant is old in nine weeks. I have lived as an onion plant. It has not pleased me. Now I wouldst become the greatest of olive trees and, in truth, the greatest of salesman.</p><p>　　And how will this be accomplished? For I have neither the knowledge nor the experience to achieve the greatness and already I have stumbled in ignorance and fallen into pools of self-pity. The answer is simple. I will commence my journey unencumbered with either the weight of unnecessary knowledge or the handicap of meaningless experience. Nature already has supplied me with knowledge and instinct far greater than any beast in the forest and the value of experience is overrated, usually by old men who nod wisely and speak stupidly.</p><p>　　In truth, experience teaches thoroughly yet her course of instruction devours men’s years so the value of her lessons diminishes with the time necessary to acquire her special wisdom. The end finds it wasted on dead men. Furthermore, experience is comparable to fashion; an action that proved successful today will be unworkable and impractical tomorrow.</p><p>　　Only principles endure and these I now possess, for the laws that will lead me to greatness are contained in the words of these scrolls. What they will teach me is more to prevent failure than to gain success, for what is success other than a state of mind? Which two, among a thouand wise men, will define success in the same words; yet failure is always described but one way. Failure is man’s inability to reach his goals in life, whatever they may be.</p><p>　　In truth, the only difference between those who have failed and those who have successed lies in the difference of their habits. Good habits are the key to all success. Bad habits are the unlocked door to failure. Thus, the first law I will obey, which precedeth all others is –I will form good habits and become their slave.</p><p>　　As a child I was slave to my impulses; now I am slave to my habits, as are all grown men. I have surrendered my free will to the years of accumulated habits and the past deeds of my life have already marked out a path which threatens to imprison my future. My actions are ruled by appetite, passion, prejudice, greed, love, fear, environment, habit, and the worst of these tyrants is habit. Therefore, if I must be a slave to habit let me be a slave to good habits. My bad habits must be destroyed and new furrows prepared for good seed.</p><p>　　I will form good habits and become their slave.</p><p>　　And how will I accomplish this difficult feat? Through these scrolls, it will be done, for each scroll contains a principle which will drive a bad habit from my life and replace it with one which will bring me closer to success. For it is another of nature’s laws that only a habit can subdue another habit. So, in order for these written words to perform their chosen task, I must discipline myself with the first of my new habits which is as follows:</p><p>　　I will read each scroll for thirty days in this prescribed manner, before I proceed to the next scroll.</p><p>　　First, I will read the words in silence when I arise. Then, I will read the words in silence after I have partaken of my midday meal. Last, I will read the words again just before I retire at day’s end, and most important, on this occasion I will read the words aloud.</p><p>　　On the next day I will repeat this procedure, and I will continue in like manner for thirty days. Then, I will turn to the next scroll and repeat this procedure for another thirty days. I will continue in this manner until I have lived with each scroll for thirty days and my reading has become habit.</p><p>　　And what will be accomplished with this habit? Herein lies the hidden secret of all man’s accomplishments. As I repeat the words daily they will soon become a part of my active mind, but more important, they will also seep into my other mind, that mysterious source which never sleeps, which creates my dreams, and often makes me act in ways I do not comprehend.</p><p>　　As the words of these scrolls are consumed by my mysterious mind I will begin to awake, each morning, with a vitality I have never known before. My vigor will increase, my enthusiasm will rise, my desire to meet the world will overcome every fear I once knew at sunrise, and I will be happier than I ever believed it possible to be in this world of strife and sorrow.</p><p>　　Eventually I will find myself reacting to all situations which confront me as I was commanded in the scrolls to react, and soon these actions and reactions will become easy to perform, for any act with practice becomes easy.</p><p>　　Thus a new and good habit is born, for when an act becomes easy through constant repetiton it becomes a pleasure to perform and if it is a pleasure to perform it is man’s nature to perform it often. When I perform it often it becomes a habit and I become its slave and since it is a good habit this is my will.</p><p>　　Today I begin a new life.</p><p>　　And I make a solemn oath to myself that nothing will retard my new life’s growth. I will lose not a day from these readings for that day cannot be retrieved nor can I substitute another for it. I must not , I will not, break this habit of daily reading from these scrolls and, in truth, the few moments spent each day on this new habit are but a small price to pay for the happiness and success that will be mine.</p><p>　　As I read and re-read the words in the scrolls to follow, never will I allow the brevity of each scroll nor the simplicity of its words to cause me to treat the scroll’s message lightly. Thousands of grapes are pressed to fill one jar with wine, and the grapeskin and pulp are tossed to the birds. So it is with these grapes of wisdom from the ages. Much has been filtered and tossed to the wind.Only the pure truth lies distilled in the words to come. I will drink as instructed and spill not a drop. And the seed of success I will swallow.</p><p>　　Today my old skin has become as dust. I will walk tall among men and they will know me not , for today I am a new man, with a new life.</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
@@ -56,6 +72,20 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new "My New Post"</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术分享 </tag>
+            
+        </tags>
       
     </entry>
     
