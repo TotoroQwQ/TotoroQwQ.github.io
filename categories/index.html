@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,25 @@
 <meta name="theme-color" content="#222">
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -28,6 +47,16 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
+
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/e492fa08.js","daovoice")
+    daovoice('init', {
+        app_id: "74f6e7be"
+      });
+    daovoice('update');
+  </script>
 
 
 
@@ -94,7 +123,7 @@
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-19T12:05:36.000Z">
 <meta property="article:modified_time" content="2021-08-19T12:07:20.381Z">
-<meta property="article:author" content="chen shi">
+<meta property="article:author" content="TOTORO">
 <meta name="twitter:card" content="summary">
 
 
@@ -103,7 +132,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -158,13 +187,6 @@
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
-    
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="/images/logo.png"
-               alt="龙猫的森林"/>
-        </a>
-      </div>
     
 
     <div class="custom-logo-site-title">
@@ -231,6 +253,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-search">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            搜索
           </a>
         </li>
       
@@ -408,10 +440,16 @@
                         <i class="fa fa-fw fa-qq"></i>QQ</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="\" target="_blank" title="Wechat">
+                      
+                        <i class="fa fa-fw fa-wechat"></i>Wechat</a>
+                  </span>
+                
             </div>
           
 
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=31544985&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=393153&auto=1&height=66"></iframe>
 
           
           
@@ -443,30 +481,42 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">chen shi</span>
+  <span class="author" itemprop="copyrightHolder">TOTORO</span>
 
   
-    <span class="post-meta-divider">|</span>
+</div>
+
+<div class="copyright">
+  
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">448</span>
+    <span title="Site words total count">447</span>
+  
+
+  
+      <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-user-md"></i>
+      <span id="busuanzi_container_site_uv">
+        本站访客数:
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 支持</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+
 
 
 
@@ -565,6 +615,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>

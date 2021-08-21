@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,25 @@
 <meta name="theme-color" content="#222">
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
 
 
 
@@ -28,6 +47,16 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
 
+
+
+
+  <script>
+    (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/e492fa08.js","daovoice")
+    daovoice('init', {
+        app_id: "74f6e7be"
+      });
+    daovoice('update');
+  </script>
 
 
 
@@ -85,12 +114,10 @@
 
 
 
-<meta name="description" content="《自我》   我从梦中醒来。   破败的楼宇环绕四周，碎裂的石像散落一地。天空茫茫一片，没有飞鸟横渡，没有日月星辰，没有颜色。    我想呐喊，却发不出一丝声音。我知道，我要寻回这漫天的星辰，填满空洞的天空。   穿过风暴，我寻回太阳和大地的红色。盈飞林间，我用绿色重新点缀森林。潜游海洋，我将蓝色还给天空和大海。拜访冰川，我释放被封存的月光。   世界慢慢有了它的色彩，可那些破碎的石像依旧那么悲">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Gris">
 <meta property="og:url" content="https://totoroqwq.github.io/gris/">
 <meta property="og:site_name" content="龙猫的森林">
-<meta property="og:description" content="《自我》   我从梦中醒来。   破败的楼宇环绕四周，碎裂的石像散落一地。天空茫茫一片，没有飞鸟横渡，没有日月星辰，没有颜色。    我想呐喊，却发不出一丝声音。我知道，我要寻回这漫天的星辰，填满空洞的天空。   穿过风暴，我寻回太阳和大地的红色。盈飞林间，我用绿色重新点缀森林。潜游海洋，我将蓝色还给天空和大海。拜访冰川，我释放被封存的月光。   世界慢慢有了它的色彩，可那些破碎的石像依旧那么悲">
 <meta property="og:locale">
 <meta property="og:image" content="https://totoroqwq.github.io/gris/sing.jpg">
 <meta property="og:image" content="https://totoroqwq.github.io/gris/broken.jpg">
@@ -98,8 +125,8 @@
 <meta property="og:image" content="https://totoroqwq.github.io/gris/beau1.jpg">
 <meta property="og:image" content="https://totoroqwq.github.io/gris/sad.jpg">
 <meta property="article:published_time" content="2021-08-15T14:30:36.000Z">
-<meta property="article:modified_time" content="2021-08-21T04:05:10.010Z">
-<meta property="article:author" content="chen shi">
+<meta property="article:modified_time" content="2021-08-21T11:23:47.075Z">
+<meta property="article:author" content="TOTORO">
 <meta property="article:tag" content="game">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -111,7 +138,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -166,13 +193,6 @@
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta custom-logo">
-    
-      <div class="site-meta-headline">
-        <a>
-          <img class="custom-logo-image" src="/images/logo.png"
-               alt="龙猫的森林"/>
-        </a>
-      </div>
     
 
     <div class="custom-logo-site-title">
@@ -239,6 +259,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-search">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            搜索
           </a>
         </li>
       
@@ -379,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  375字
+                  374字
                 </span>
               
 
@@ -417,30 +447,37 @@
 
       
         <p><img src="/gris/sing.jpg"></p>
+<span id="more"></span>
+
 <p><strong>《自我》</strong>  </p>
 <p>我从梦中醒来。  </p>
+<hr>
 <p>破败的楼宇环绕四周，碎裂的石像散落一地。<br>天空茫茫一片，没有飞鸟横渡，没有日月星辰，没有颜色。  </p>
 <p><img src="/gris/broken.jpg"></p>
+<hr>
 <p>我想呐喊，却发不出一丝声音。<br>我知道，我要寻回这漫天的星辰，填满空洞的天空。  </p>
 <p>穿过风暴，我寻回太阳和大地的红色。<br>盈飞林间，我用绿色重新点缀森林。<br>潜游海洋，我将蓝色还给天空和大海。<br>拜访冰川，我释放被封存的月光。  </p>
 <p>世界慢慢有了它的色彩，可那些破碎的石像依旧那么悲伤，那么痛苦。<br>就好像，<br>我自己。  </p>
 <p><img src="/gris/sad2.jpg"></p>
+<hr>
 <p>我张大嘴，没有声音。  </p>
 <p>四散的星辰，在我手中慢慢汇聚。一些温暖的力量涌进身体。<br>什么东西从我的喉中涌出，<br>是天空的明媚，<br>是大地的厚重，<br>是森林的活力，<br>是海洋的灵动，<br>是歌声。<br>于是鲜花盛开，生动了楼宇。  </p>
 <p><img src="/gris/beau1.jpg"></p>
-<p>我穿过天空，大海，花丛，来到楼宇尽头。<br>那是一尊巨大的、零碎的、悲伤的，<br>我。<br><img src="/gris/sad.jpg"></p>
+<hr>
+<p>我穿过天空，大海，花丛，来到楼宇尽头。<br>那是一尊巨大的、零碎的、悲伤的，<br>我。  </p>
+<p><img src="/gris/sad.jpg"></p>
 <!-- <iframe height=500 width=900 src="1.mp4"> -->
 
 
+<hr>
 <p>歌声流出，愈合着雕像。<br>黑暗从裂痕之间涌出，吞噬着我。<br>还给了我。</p>
 <p><video src="1.mp4" type="video/mp4" controls="controls" preload="auto" width="890" height="500"><br></video></p>
 <p>那是它承受的悲伤和痛苦。<br>那是无尽的虚无和破败。  </p>
+<hr>
 <p>不，<br>有光。<br>是一颗星辰。<br>是漫天星空。<br>是缤纷的世界。  </p>
 <p><video src="2.mp4" type="video/mp4" controls="controls" preload="auto" width="890" height="500"><br></video></p>
 <blockquote>
-<p>ps:  联想到一首诗  </p>
-</blockquote>
-<blockquote>
+<p>联想到一首诗：</p>
 <p>从童年起<br>我便独自一人<br>照顾着<br>历代的星辰<br>–白鹤林</p>
 </blockquote>
 
@@ -448,6 +485,10 @@
     </div>
     
     
+    
+
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------------- 本文结束 <i class="fa fa-desktop"></i> 感谢阅读 -------------</div>
     
 
     
@@ -459,7 +500,7 @@
         <ul class="post-copyright">
   <li class="post-copyright-author">
     <strong>本文作者：</strong>
-    chen shi
+    TOTORO
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
@@ -478,9 +519,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/game/" rel="tag"># game</a>
+            <a href="/tags/game/" rel="tag"><i class="fa fa-tag"></i> game</a>
           
-            <a href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag"># 随笔</a>
+            <a href="/tags/%E9%9A%8F%E7%AC%94/" rel="tag"><i class="fa fa-tag"></i> 随笔</a>
           
         </div>
       
@@ -646,10 +687,16 @@
                         <i class="fa fa-fw fa-qq"></i>QQ</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="\" target="_blank" title="Wechat">
+                      
+                        <i class="fa fa-fw fa-wechat"></i>Wechat</a>
+                  </span>
+                
             </div>
           
 
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=31544985&auto=1&height=66"></iframe>
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=393153&auto=1&height=66"></iframe>
 
           
           
@@ -681,30 +728,42 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">chen shi</span>
+  <span class="author" itemprop="copyrightHolder">TOTORO</span>
 
   
-    <span class="post-meta-divider">|</span>
+</div>
+
+<div class="copyright">
+  
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">448</span>
+    <span title="Site words total count">447</span>
+  
+
+  
+      <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-user-md"></i>
+      <span id="busuanzi_container_site_uv">
+        本站访客数:
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
   
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 支持</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a></div>
+
 
 
 
@@ -803,6 +862,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
