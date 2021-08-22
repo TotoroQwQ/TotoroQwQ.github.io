@@ -331,11 +331,7 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
-
   
 
 
@@ -690,6 +686,31 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="../js/src/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'NvbLdsBj5NQ4WdWTAHIPUxIr-gzGzoHsz',
+        appKey: 'DIO4Q7w8oBYT3wgb2jAP2SHO',
+        placeholder: '此方有酒，请君慢叙',
+        avatar:'monsterid',
+        guest_info:guest,
+        pageSize:'10' || 10,
+        requiredFields: ['nick'],
+        enableQQ: true
+    });
+  </script>
 
 
 
