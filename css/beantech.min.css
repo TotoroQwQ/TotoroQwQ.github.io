@@ -119,13 +119,15 @@ article {
 
 blockquote {
   color: gray;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 0.95em;
   margin: 20px 0 20px;
+  font-family: "Biaodian Pro Serif GB","Numeral LF Serif",Georgia,"Times New Roman","Han Kaiti GB",cursive,serif;
+
 }
 
 blockquote p {
-  margin: 0;
+  margin: 0 0 14px 0;
 }
 
 small.img-hint {
@@ -358,6 +360,7 @@ pre code {
   line-height: 1.7;
 }
 
+
 .navbar-custom .navbar-brand {
   font-weight: 800;
   color: white;
@@ -393,7 +396,7 @@ pre code {
 
   .navbar-custom .navbar-brand {
     color: white;
-    padding: 20px;
+    /* padding: 20px; */
     line-height: 20px;
   }
 
@@ -501,6 +504,12 @@ pre code {
   }
 }
 
+@media only screen and (min-width: 540px) {
+  .intro-header .post-heading {
+    padding:  80px 30px;
+  }
+}
+
 .intro-header .site-heading {
   padding: 95px 0 70px;
 }
@@ -510,6 +519,8 @@ pre code {
     padding: 150px 0;
   }
 }
+
+
 
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -546,7 +557,7 @@ pre code {
 }
 
 .intro-header .post-heading h1 {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 15px;
 }
 
@@ -563,7 +574,7 @@ pre code {
     "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC",
     "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.4;
   font-weight: 400;
   margin: 10px 0 10px;
@@ -877,9 +888,26 @@ img::-moz-selection {
   background: transparent;
 }
 
+.page_end_tags,
 .tags {
   margin-bottom: 10px;
 }
+
+.page_end_tags{
+  margin-top: 40px;
+  font-size: 13px;
+}
+
+.page_end_tags .tag{
+  display: inline-block;
+  color: #555;
+  text-decoration: none;
+  outline: none;
+  border-bottom: 1px solid #999;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+
 
 .tags a,
 .tags .tag {

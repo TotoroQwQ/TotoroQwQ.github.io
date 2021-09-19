@@ -23,21 +23,21 @@
   </url>
   
   <url>
-    <loc>http://totoro.fun/undefined/Gris/</loc>
+    <loc>http://totoro.fun/undefined/undefined/Gris/</loc>
     
     <lastmod>2021-09-15</lastmod>
     
   </url>
   
   <url>
-    <loc>http://totoro.fun/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://totoro.fun/cn/cn/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-04-16</lastmod>
     
   </url>
   
   <url>
-    <loc>http://totoro.fun/cn/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://totoro.fun/undefined/en/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-04-16</lastmod>
     
@@ -60,7 +60,7 @@
 
   <url>
     <loc>http://totoro.fun/</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,21 +68,21 @@
   
   <url>
     <loc>http://totoro.fun/tags/Game/</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://totoro.fun/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://totoro.fun/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -91,7 +91,7 @@
   
   <url>
     <loc>http://totoro.fun/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-09-16</lastmod>
+    <lastmod>2021-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

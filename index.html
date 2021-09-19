@@ -245,7 +245,7 @@
       </button>
       
         <a class="navbar-brand" href="/">
-          <div class="logo" style=" width: 113px; height: 45px; background-image: url(/img/header_img/logo.png); background-size: 113px 45px;">
+          <div class="logo" style=" width: 123px; height: 62px; background-image: url(/img/header_img/logo.png); background-size: 123px 62px;">
 
           </div>
         </a>
@@ -272,13 +272,9 @@
           <li>
             <a href="/about/">
               
-              关于
+              <i class="fa fa-fw fa-user"></i>关于
               
               
-              <!-- 
-              <i class="fa fa-fw fa-user">关于
-              
-               -->
             </a>
           </li>
           
@@ -287,13 +283,9 @@
           <li>
             <a href="/archive/">
               
-              归档
+              <i class="fa fa-fw fa-book"></i>归档
               
               
-              <!-- 
-              <i class="fa fa-fw fa-book">归档
-              
-               -->
             </a>
           </li>
           
@@ -302,13 +294,9 @@
           <li>
             <a href="/categories/">
               
-              分类
+              <i class="fa fa-fw fa-th"></i>分类
               
               
-              <!-- 
-              <i class="fa fa-fw fa-th">分类
-              
-               -->
             </a>
           </li>
           
@@ -317,13 +305,9 @@
           <li>
             <a href="/tags/">
               
-              标签
+              <i class="fa fa-fw fa-tags"></i>标签
               
               
-              <!-- 
-              <i class="fa fa-fw fa-tags">标签
-              
-               -->
             </a>
           </li>
           
@@ -337,32 +321,6 @@
           
 
           <!-- LangSelect -->
-          
-          
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      简体中文
-    </span>
-    <select id="lang-select" data-canonical="index.html">
-      
-      
-      <option value="en" >
-        English
-      </option>
-      
-      <option value="cn"  selected >
-        简体中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
-          
           
         </ul>
       </div>
@@ -521,7 +479,7 @@
   <!-- top end -->
   
 
-  <a href="/en/Hexo-Theme-LiveMyLife/">
+  <a href="/undefined/en/Hexo-Theme-LiveMyLife/">
     <h2 class="post-title">
       Hexo-Theme-LiveMyLife
     </h2>
@@ -556,7 +514,7 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
   <!-- top end -->
   
 
-  <a href="/undefined/Gris/">
+  <a href="/undefined/undefined/Gris/">
     <h2 class="post-title">
       Gris
     </h2>
@@ -606,7 +564,7 @@ This LiveMyLife theme created by Vincent modified from the original Porter YenYu
   <!-- top end -->
   
 
-  <a href="/cn/Hexo-Theme-LiveMyLife/">
+  <a href="/cn/cn/Hexo-Theme-LiveMyLife/">
     <h2 class="post-title">
       Hexo-Theme-LiveMyLife
     </h2>
@@ -740,15 +698,15 @@ Gitee 仓库地址：ht......
 <div class="widget">
   <ul>
     
-    <a href="undefined/Gris/">
+    <a href="undefined/undefined/Gris/">
       <li>Gris</li>
     </a>
     
-    <a href="en/Hexo-Theme-LiveMyLife/">
+    <a href="cn/cn/Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
-    <a href="cn/Hexo-Theme-LiveMyLife/">
+    <a href="undefined/en/Hexo-Theme-LiveMyLife/">
       <li>Hexo-Theme-LiveMyLife</li>
     </a>
     
@@ -936,10 +894,6 @@ Gitee 仓库地址：ht......
   
 
   
-    <!-- LangSelect start -->
-    <script type="text/javascript" src="/js/langselect.js"></script>
-    <!-- LangSelect end -->
-  
 
   
 
@@ -1002,11 +956,10 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
 		<!-- Search -->
 		
 		<div class="popup search-popup local-search-popup">
-  <span class="popup-btn-close">
-    ESC
-  </span>
+
   <div class="container">
     <div class="row">
+
       <!-- <div class="col-md-9 col-md-offset-1"> -->
       <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
 
@@ -1021,6 +974,9 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
         </div>
         <div id="local-search-result"></div>
       </div>
+      <span class="popup-btn-close">
+        ESC
+      </span>
     </div>
   </div>
 </div>
@@ -1254,7 +1210,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
               slicesOfContent.forEach(function (slice) {
                 resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
               });
-              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + articleUrl+imgUrl + "' width='64px' height='48px'></img></div></a>";
 
               resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
             }
