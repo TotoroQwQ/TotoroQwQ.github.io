@@ -5938,13 +5938,22 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     background-color: #eee
 }
 
-.next{
+.next,
+.previous{
     /* text-align: right; */
-    width: 100%;
+    width: 48%;
     display: inline-block;
     margin-top: 30px;
     list-style: none;
     font-size: 18px;
+}
+
+.next{
+    float: right;
+}
+
+.previous{
+    float: left;
 }
 
 .next>a,
