@@ -367,38 +367,41 @@
 		<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 
-  <style type="text/css">
-    .body--light {
-      /* intro-header */
-      --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
-      --intro-header-background-image-url-post: url('img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-page: url('/img/header_img/tag_bg.jpg');
-    }
-    .body--dark {
-      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/tag_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/tag_bg.jpg');
-    }
+<style type="text/css">
+  .body--light {
+    /* intro-header */
+    --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
+    --intro-header-background-image-url-post: url('img/header_img/bg12.jpg');
+    --intro-header-background-image-url-page: url('/img/header_img/bg12.jpg');
+  }
 
-    header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/tag_bg.jpg'); */
+  .body--dark {
+    --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
+    --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/bg12.jpg');
+    --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/bg12.jpg');
+  }
+
+  header.intro-header {
+    
+      /*page*/
+      background-image: var(--intro-header-background-image-url-page);
+      /* background-image: url('/img/header_img/bg12.jpg'); */
       
+  }
+
+  #signature {
+      /*signature*/
+      background-image: url('/img/signature/signature.png');
     }
 
     
-      #signature {/*signature*/
-        background-image: url('/img/signature/signature.png');
-      }
-    
-  </style>
+</style>
 
 
 
 
 
-<header class="intro-header" >
+<header class="intro-header">
   <!-- Signature -->
   <div id="signature">
     <div class="container">
@@ -406,9 +409,11 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
           <div class="site-heading">
-            <h1>Tags</h1>
+            
+            <h1></i>标签</h1>
+            
             <!--<hr class="small">-->
-            <span class="subheading">I don’t know where I am going, but I am on my way......</span>
+            <span class="subheading">记录成长，记录生活</span>
           </div>
           
         </div>
@@ -419,7 +424,8 @@
   
   <!-- waveoverlay start -->
   <div class="preview-overlay">
-    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </defs>
@@ -435,7 +441,6 @@
   
 
 </header>
-
 
 
 		<!-- Main Content (Post contains
@@ -462,7 +467,7 @@
         
         <a href="#随笔" title="随笔" rel="1">随笔</a>
         
-        <a href="#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="2">Hexo-Theme-LiveMyLife</a>
+        <a href="#hexo" title="hexo" rel="1">hexo</a>
         
       </div>
 
@@ -473,12 +478,19 @@
           <span class="tag-text">Game</span>
         </span>
         
-        <div class="post-preview">
-          <a href="/undefined/undefined/Gris/">
-            <h2 class="post-title">
+        <div class="post-preview" style="display: flex; padding: 20px;">
+          <!-- 加一个图片 -->
+          <div class='tag_post_icon' style="flex: 1; margin-right: 20px;" >
+            
+            <img class='media-image' src=" /Gris/sing.jpg " width='120px'
+              height='75px'>
+            </img>
+            
+          </div>
+
+          <a href="/Gris/" style="flex: 9;">
+            <h2 class="post-title" style="margin-top: 10px;">
               Gris
-              
-              -- 
               
             </h2>
             
@@ -497,12 +509,19 @@
           <span class="tag-text">随笔</span>
         </span>
         
-        <div class="post-preview">
-          <a href="/undefined/undefined/Gris/">
-            <h2 class="post-title">
+        <div class="post-preview" style="display: flex; padding: 20px;">
+          <!-- 加一个图片 -->
+          <div class='tag_post_icon' style="flex: 1; margin-right: 20px;" >
+            
+            <img class='media-image' src=" /Gris/sing.jpg " width='120px'
+              height='75px'>
+            </img>
+            
+          </div>
+
+          <a href="/Gris/" style="flex: 9;">
+            <h2 class="post-title" style="margin-top: 10px;">
               Gris
-              
-              -- 
               
             </h2>
             
@@ -517,33 +536,23 @@
       </div>
       
       <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="Hexo-Theme-LiveMyLife">
-          <span class="tag-text">Hexo-Theme-LiveMyLife</span>
+        <span class="fa fa-tag listing-seperator" id="hexo">
+          <span class="tag-text">hexo</span>
         </span>
         
-        <div class="post-preview">
-          <a href="/cn/cn/Hexo-Theme-LiveMyLife/">
-            <h2 class="post-title">
-              Hexo-Theme-LiveMyLife
-              
-              -- cn
-              
-            </h2>
+        <div class="post-preview" style="display: flex; padding: 20px;">
+          <!-- 加一个图片 -->
+          <div class='tag_post_icon' style="flex: 1; margin-right: 20px;" >
             
-            <h3 class="post-subtitle">
-              A succinct hexo theme...
-            </h3>
+            <img class='media-image' src=" /Hexo-Theme-LiveMyLife/bg.jpg " width='120px'
+              height='75px'>
+            </img>
             
-          </a>
-        </div>
-        <hr>
-        
-        <div class="post-preview">
-          <a href="/undefined/en/Hexo-Theme-LiveMyLife/">
-            <h2 class="post-title">
+          </div>
+
+          <a href="/Hexo-Theme-LiveMyLife/" style="flex: 9;">
+            <h2 class="post-title" style="margin-top: 10px;">
               Hexo-Theme-LiveMyLife
-              
-              -- 
               
             </h2>
             
@@ -561,7 +570,6 @@
     </div>
   </div>
 </div>
-
 
 		<!-- Footer (contains ThemeColor、viewer) -->
 		<!-- Footer -->

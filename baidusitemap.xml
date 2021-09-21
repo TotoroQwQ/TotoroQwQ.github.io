@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://totoro.fun/undefined/undefined/Gris/</loc>
+    <loc>http://totoro.fun/test1/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>http://totoro.fun/test/</loc>
+    <lastmod>2021-09-20</lastmod>
+  </url>
+  <url>
+    <loc>http://totoro.fun/Gris/</loc>
     <lastmod>2021-09-15</lastmod>
   </url>
   <url>
-    <loc>http://totoro.fun/cn/cn/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>
-  <url>
-    <loc>http://totoro.fun/undefined/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://totoro.fun/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
 </urlset> 

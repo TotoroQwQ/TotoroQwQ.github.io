@@ -126,7 +126,7 @@ blockquote {
   /* font-style: italic; */
   font-size: 0.95em;
   margin: 20px 0 20px;
-  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Georgia, "Times New Roman", "Han Kaiti GB", cursive, serif;
+  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif;
 
 }
 
@@ -497,6 +497,19 @@ pre code {
 .intro-header .page-heading {
   padding: 85px 0 55px;
   color: white;
+  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif;
+}
+
+.intro-header .site-heading h1,
+.intro-header .post-heading h1,
+.intro-header .page-heading h1{
+  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif;
+}
+
+.intro-header .site-heading .subheading,
+.intro-header .post-heading .subheading,
+.intro-header .page-heading .subheading{
+  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif !important;
 }
 
 @media only screen and (min-width: 840px) {
@@ -1018,6 +1031,24 @@ img::-moz-selection {
     margin-right: 5px;
   }
 }
+
+
+#veditor {
+	background-image: url(/img/avatar/comment.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 255, 255, 0);
+	resize: vertical
+}
+
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+
+
 
 #tag-heading {
   padding: 70px 0 60px;

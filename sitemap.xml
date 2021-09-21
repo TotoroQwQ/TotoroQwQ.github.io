@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://totoro.fun/tags/index.html</loc>
+    <loc>http://totoro.fun/categories/index.html</loc>
     
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-21</lastmod>
     
   </url>
   
   <url>
-    <loc>http://totoro.fun/categories/index.html</loc>
+    <loc>http://totoro.fun/tags/index.html</loc>
     
-    <lastmod>2021-09-15</lastmod>
+    <lastmod>2021-09-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://totoro.fun/test1/</loc>
+    
+    <lastmod>2021-09-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://totoro.fun/test/</loc>
+    
+    <lastmod>2021-09-20</lastmod>
     
   </url>
   
@@ -23,21 +37,14 @@
   </url>
   
   <url>
-    <loc>http://totoro.fun/undefined/undefined/Gris/</loc>
+    <loc>http://totoro.fun/Gris/</loc>
     
     <lastmod>2021-09-15</lastmod>
     
   </url>
   
   <url>
-    <loc>http://totoro.fun/cn/cn/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://totoro.fun/undefined/en/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://totoro.fun/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-04-16</lastmod>
     
@@ -60,7 +67,7 @@
 
   <url>
     <loc>http://totoro.fun/</loc>
-    <lastmod>2021-09-20</lastmod>
+    <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,21 +75,21 @@
   
   <url>
     <loc>http://totoro.fun/tags/Game/</loc>
-    <lastmod>2021-09-20</lastmod>
+    <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://totoro.fun/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2021-09-20</lastmod>
+    <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://totoro.fun/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-09-20</lastmod>
+    <loc>http://totoro.fun/tags/hexo/</loc>
+    <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -90,8 +97,15 @@
 
   
   <url>
-    <loc>http://totoro.fun/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2021-09-20</lastmod>
+    <loc>http://totoro.fun/categories/Hexo/</loc>
+    <lastmod>2021-09-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://totoro.fun/categories/Hexo/Theme/</loc>
+    <lastmod>2021-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

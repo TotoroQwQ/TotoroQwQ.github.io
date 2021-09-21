@@ -367,38 +367,41 @@
 		<!-- Modified by Yu-Hsuan Yen -->
 <!-- Post Header -->
 
-  <style type="text/css">
-    .body--light {
-      /* intro-header */
-      --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
-      --intro-header-background-image-url-post: url('img/header_img/categories_bg.jpg');
-      --intro-header-background-image-url-page: url('/img/header_img/categories_bg.jpg');
-    }
-    .body--dark {
-      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/categories_bg.jpg');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/categories_bg.jpg');
-    }
+<style type="text/css">
+  .body--light {
+    /* intro-header */
+    --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
+    --intro-header-background-image-url-post: url('img/header_img/bg6.jpg');
+    --intro-header-background-image-url-page: url('/img/header_img/bg6.jpg');
+  }
 
-    header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/categories_bg.jpg'); */
+  .body--dark {
+    --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
+    --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/bg6.jpg');
+    --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/bg6.jpg');
+  }
+
+  header.intro-header {
+    
+      /*page*/
+      background-image: var(--intro-header-background-image-url-page);
+      /* background-image: url('/img/header_img/bg6.jpg'); */
       
+  }
+
+  #signature {
+      /*signature*/
+      background-image: url('/img/signature/signature.png');
     }
 
     
-      #signature {/*signature*/
-        background-image: url('/img/signature/signature.png');
-      }
-    
-  </style>
+</style>
 
 
 
 
 
-<header class="intro-header" >
+<header class="intro-header">
   <!-- Signature -->
   <div id="signature">
     <div class="container">
@@ -406,9 +409,11 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
           <div class="site-heading">
-            <h1>Categories</h1>
+            
+            <h1></i>分类</h1>
+            
             <!--<hr class="small">-->
-            <span class="subheading">Hi , here is Categories ....</span>
+            <span class="subheading">记录美好，整理成册...</span>
           </div>
           
         </div>
@@ -419,7 +424,8 @@
   
   <!-- waveoverlay start -->
   <div class="preview-overlay">
-    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
       </defs>
@@ -435,7 +441,6 @@
   
 
 </header>
-
 
 
 		<!-- Main Content (Post contains
@@ -460,15 +465,20 @@
       <!-- 标签云 -->
       <div id='tag_cloud' class="tags">
         
-        <a href="#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="2">Hexo-Theme-LiveMyLife</a>
+        <a href="#Hexo" title="Hexo"
+          rel="1">Hexo</a>
+        
+        <a href="#Theme" title="Theme"
+          rel="1">Theme</a>
         
       </div>
 
       <!-- 标签列表 -->
       
       <div class="one-tag-list">
-        <span class="fa fa-tag listing-seperator" id="Hexo-Theme-LiveMyLife">
-          <span class="tag-text">Hexo-Theme-LiveMyLife</span>
+        <span class="listing-seperator" id="Hexo">
+          <i class="fa fa-fw fa-th"></i>
+          <span class="tag-text">Hexo</span>
         </span>
         
         <!-- <li class="listing-item">
@@ -476,11 +486,9 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/cn/cn/Hexo-Theme-LiveMyLife/">
+          <a href="/Hexo-Theme-LiveMyLife/">
             <h2 class="post-title">
               Hexo-Theme-LiveMyLife
-              
-              -- cn
               
             </h2>
             
@@ -493,16 +501,22 @@
         </div>
         <hr>
         
+      </div>
+      
+      <div class="one-tag-list">
+        <span class="listing-seperator" id="Theme">
+          <i class="fa fa-fw fa-th"></i>
+          <span class="tag-text">Theme</span>
+        </span>
+        
         <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
         <div class="post-preview">
-          <a href="/undefined/en/Hexo-Theme-LiveMyLife/">
+          <a href="/Hexo-Theme-LiveMyLife/">
             <h2 class="post-title">
               Hexo-Theme-LiveMyLife
-              
-              -- 
               
             </h2>
             
@@ -521,7 +535,6 @@
     </div>
   </div>
 </div>
-
 
 		<!-- Footer (contains ThemeColor、viewer) -->
 		<!-- Footer -->
