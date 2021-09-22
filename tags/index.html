@@ -281,6 +281,17 @@
           
           
           <li>
+            <a href="/archive/">
+              
+              <i class="fa fa-fw fa-book"></i>归档
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
             <a href="/categories/">
               
               <i class="fa fa-fw fa-th"></i>分类
@@ -295,17 +306,6 @@
             <a href="/tags/">
               
               <i class="fa fa-fw fa-tags"></i>标签
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
-            <a href="/archive/">
-              
-              <i class="fa fa-fw fa-book"></i>归档
               
               
             </a>
@@ -373,12 +373,14 @@
     --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
     --intro-header-background-image-url-post: url('img/header_img/bg12.jpg');
     --intro-header-background-image-url-page: url('/img/header_img/bg12.jpg');
+    --intro-header-background-image-url-default: url('/img/header_img/bg.jpg');
   }
 
   .body--dark {
     --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
     --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/bg12.jpg');
     --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/bg12.jpg');
+    --intro-header-background-image-url-default: url('/img/header-img/bg.jpg');
   }
 
   header.intro-header {
@@ -463,6 +465,8 @@
       <!-- 标签云 -->
       <div id='tag_cloud' class="tags">
         
+        <a href="#开发笔记" title="开发笔记" rel="1">开发笔记</a>
+        
         <a href="#Game" title="Game" rel="1">Game</a>
         
         <a href="#随笔" title="随笔" rel="1">随笔</a>
@@ -472,6 +476,37 @@
       </div>
 
       <!-- 标签列表 -->
+      
+      <div class="one-tag-list">
+        <span class="fa fa-tag listing-seperator" id="开发笔记">
+          <span class="tag-text">开发笔记</span>
+        </span>
+        
+        <div class="post-preview" style="display: flex; padding: 20px;">
+          <!-- 加一个图片 -->
+          <div class='tag_post_icon' style="flex: 1; margin-right: 20px;" >
+            
+            <img class='media-image' src=" /Github打不开/github.jpg " width='120px'
+              height='75px'>
+            </img>
+            
+          </div>
+
+          <a href="/Github打不开/" style="flex: 9;">
+            <h2 class="post-title" style="margin-top: 10px;">
+              Github打不开
+              
+            </h2>
+            
+            <h3 class="post-subtitle">
+              解决github被墙的问题
+            </h3>
+            
+          </a>
+        </div>
+        <hr>
+        
+      </div>
       
       <div class="one-tag-list">
         <span class="fa fa-tag listing-seperator" id="Game">
