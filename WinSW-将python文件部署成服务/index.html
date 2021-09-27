@@ -139,7 +139,7 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://totoro.fun/tags/开发笔记/">
+  <link rel="canonical" href="http://totoro.fun/WinSW-将python文件部署成服务/">
   <title>
     
       龙猫的森林
@@ -385,10 +385,9 @@
 
   header.intro-header {
     
-      /*page*/
-      background-image: var(--intro-header-background-image-url-page);
-      /* background-image: url('/img/header_img/archive_bg2.jpg'); */
-      
+        /*post*/
+        background-image: var(--intro-header-background-image-url-default);
+        
   }
 
   #signature {
@@ -410,13 +409,62 @@
       <div class="row header-row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
+          <div class="post-heading">
+
+            <h1></h1>
+            <h2 class="subheading"></h2>
+            <div class="tags">
+              
+            </div>
+
+            <span class="meta">
+              作者 : Totoro
+            </span>
+            <div class="blank_box"></div>
+
+            <span class="meta">
+              发布于 : 2021-09-27
+              <span style="padding: 10px;">|</span>
+              更新于 : 2021-09-27
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              <i class="fa fa-file-word-o"></i>
+              总计 <span class="post-count">1k</span> 字
+              <span style="padding: 10px;">|</span>
+              <i class="fa fa-clock-o"></i>
+              阅读大约 <span class="post-count">4</span>
+              分钟
+            </span>
+            <div class="blank_box"></div>
+
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              <!-- Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times -->
+
+              <i class="fa fa-eye"></i>
+              <span>
+                <b><i><span id="busuanzi_value_site_pv" style="display: inline-block; margin: 0px;"><i
+                        class="fa fa-spinner fa-spin"></i></span></i></b> 阅读数
+              </span>
+              <span style="padding: 10px;">|</span>
+              <i class="fa fa-user"></i>
+              <span>
+                <b><i><span id="busuanzi_value_site_uv" style="display: inline-block; margin: 0px;"><i
+                        class="fa fa-spinner fa-spin"></i></span></i></b> 访问数
+              </span>
+            </span>
+            <!-- 不蒜子统计 end -->
             
 
-            <h1>龙猫の森林</h1>
-            
-            <!--<hr class="small">-->
-            <span class="subheading">保持最初的那份童真 去面对生活</span>
+
           </div>
           
         </div>
@@ -457,303 +505,361 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
+		
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
+<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- test 2 -->
 
-      
+      <!-- Post Container -->
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+        <div class="page_content">
+          <p><strong>WinSW-将python程序部署成服务</strong></p>
+<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>使用python的flask框架搭建了一个api接口服务。但是部署的时候只能用cmd小黑框运行，关掉小黑框时程序就退出了。于是找到了这个工具。</p>
+<h2 id="WinSW使用"><a href="#WinSW使用" class="headerlink" title="WinSW使用"></a>WinSW使用</h2><h3 id="winsw下载"><a href="#winsw下载" class="headerlink" title="winsw下载"></a>winsw下载</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/winsw/winsw/releases">github官网下载</a>,不建议下载pre-release版。当前的3.+版本使用起来有bug</li>
+<li><a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/QZtpbzCQSc7">阿里云分享</a>，只有无内置.net的版本。另一个版本下载失败了。</li>
+</ul>
+<p>如果系统里面没有安装对应的.net版本，需要下载体积较大的版本。如果.net环境比较全，直接选择体积较小的winsw.net4.exe<br><img src="2021-09-24-20-11-40.png" alt=""></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ol>
+<li><p>将winse.exe放入项目文件夹，重命名为项目名或服务名或任意你想要的名字，这个名字不会起任何作用，让自己容易管理就好，我这里没有改名<br><img src="2021-09-24-20-16-53.png" alt=""></p>
+</li>
+<li><p>新建一个和winsw执行程序同名的xml文件，在里面配置如下,详细各个字段什么意思后面讲：</p>
+</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">service</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">id</span>&gt;</span>test<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">name</span>&gt;</span>test<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">description</span>&gt;</span>This service runs test serve in python env.<span class="tag">&lt;/<span class="name">description</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">env</span> <span class="attr">name</span>=<span class="string">&quot;PYTHON_HOME&quot;</span> <span class="attr">value</span>=<span class="string">&quot;%BASE%&quot;</span>/&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">executable</span>&gt;</span>python<span class="tag">&lt;/<span class="name">executable</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">arguments</span>&gt;</span>python\test.py<span class="tag">&lt;/<span class="name">arguments</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 控制日志--&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">log</span> <span class="attr">mode</span>=<span class="string">&quot;roll-by-size&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 一个日志文件大小60k，单位是k--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sizeThreshold</span>&gt;</span>60<span class="tag">&lt;/<span class="name">sizeThreshold</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 一共有8个日志文件，--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">keepFiles</span>&gt;</span>8<span class="tag">&lt;/<span class="name">keepFiles</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">log</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">service</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ol>
+<li>按配置中的路径 <code>&lt;arguments&gt;python\test.py&lt;/arguments&gt;</code> 放入可执行的python文件test.py，打开cmd，进入到项目目录，输入命令安装服务。</li>
+</ol>
+<h3 id="winsw命令"><a href="#winsw命令" class="headerlink" title="winsw命令"></a>winsw命令</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装服务，会按照配置中的name项安装服务，winsw如果改名了，命令中写对应的名称。</span></span><br><span class="line">&lt;winsw&gt; install </span><br><span class="line"><span class="comment"># 卸载服务</span></span><br><span class="line">winsw uninstall</span><br><span class="line"><span class="comment"># 启动服务</span></span><br><span class="line">winsw start</span><br><span class="line"><span class="comment"># 暂停服务</span></span><br><span class="line">winsw stop</span><br><span class="line"><span class="comment"># 重启服务</span></span><br><span class="line">winsw restart</span><br></pre></td></tr></table></figure>
+<h2 id="配置项"><a href="#配置项" class="headerlink" title="配置项"></a>配置项</h2><p><a target="_blank" rel="noopener" href="https://github.com/winsw/winsw/blob/v3/docs/xml-config-file.md">github原文链接</a></p>
+<h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><p><strong>必要</strong></p>
+<p>指定 Windows 内部用于识别服务的 ID。这在系统中安装的所有服务中必须是独一无二的，并且它应该完全由字母数字字符组成。</p>
+<h3 id="name"><a href="#name" class="headerlink" title="name"></a>name</h3><p><strong>可选</strong></p>
+<p>服务的简短显示名称，其中可以包含空间和其他字符。这不应该太长，就像id，这也需要在给定系统中的所有服务中独一无二</p>
+<h3 id="executable"><a href="#executable" class="headerlink" title="executable"></a>executable</h3><p><strong>必要</strong></p>
+<p>此元素指定要启动的可执行性。它可以是绝对路径，或者您可以指定可执行名称并允许从环境变量读取</p>
+<h3 id="description"><a href="#description" class="headerlink" title="description"></a>description</h3><p><strong>可选</strong></p>
+<p>长久可读的服务描述。请说明清楚服务的用途和功能以便维护</p>
+<h3 id="startmode"><a href="#startmode" class="headerlink" title="startmode"></a>startmode</h3><p><strong>可选</strong></p>
+<p>指定了 Windows 服务的启动模式。它可以是以下值之一：自动值或手动值.<br>默认值是 <code>Automatic</code>(自动).<br><a target="_blank" rel="noopener" href="https://docs.microsoft.com/windows/win32/cimwin32prov/changestartmode-method-in-class-win32-service">了解详细配置</a>.</p>
+<h3 id="delayedAutoStart"><a href="#delayedAutoStart" class="headerlink" title="delayedAutoStart"></a>delayedAutoStart</h3><p><strong>可选</strong></p>
+<p>如果定义自动启动模式，此选项可启用延迟启动模式.<br><a target="_blank" rel="noopener" href="https://techcommunity.microsoft.com/t5/ask-the-performance-team/ws2008-startup-processes-and-delayed-automatic-start/ba-p/372692">了解详细配置</a>.</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">delayedAutoStart</span>&gt;</span>true<span class="tag">&lt;/<span class="name">delayedAutoStart</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="depend"><a href="#depend" class="headerlink" title="depend"></a>depend</h3><p><strong>可选</strong></p>
+<p>配置服务的依赖项，即前置服务.可以配置多个依赖项。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">depend</span>&gt;</span>Eventlog<span class="tag">&lt;/<span class="name">depend</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">depend</span>&gt;</span>W32Time<span class="tag">&lt;/<span class="name">depend</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="logpath"><a href="#logpath" class="headerlink" title="logpath"></a>logpath</h3><p><strong>可选</strong></p>
+<p>winsw的日志目录，存放服务的安装、运行日志。<br>默认是<code>.\</code></p>
+<h3 id="log"><a href="#log" class="headerlink" title="log"></a>log</h3><p><strong>可选</strong></p>
+<p>日志的存放模式</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th>模式</th>
+<th>说明</th>
+<th>配置样例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>append(默认)</td>
+<td>追加模式，新的日志追加到旧日志后面</td>
+<td><code>&lt;log mode=&quot;append&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td>reset</td>
+<td>重置模式，每次重新启动，新建一个日志文件</td>
+<td><code>&lt;log mode=&quot;reset&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td>none</td>
+<td>无日志模式，不会记录日志</td>
+<td><code>&lt;log mode=&quot;none&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td>roll-by-size</td>
+<td>按日志大小轮转，设置大小和保留份数</td>
+<td>如下</td>
+</tr>
+<tr>
+<td>roll-by-time</td>
+<td>按时间轮转，每天自动生成新的日志文件</td>
+<td>如下</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">log</span> <span class="attr">mode</span>=<span class="string">&quot;roll-by-size&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">sizeThreshold</span>&gt;</span>10240<span class="tag">&lt;/<span class="name">sizeThreshold</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">keepFiles</span>&gt;</span>8<span class="tag">&lt;/<span class="name">keepFiles</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">log</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">log</span> <span class="attr">mode</span>=<span class="string">&quot;roll-by-time&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">pattern</span>&gt;</span>yyyyMMdd<span class="tag">&lt;/<span class="name">pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">log</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Arguments"><a href="#Arguments" class="headerlink" title="Arguments"></a>Arguments</h3><p><strong>可选</strong></p>
+<p>该元素指定要传递给可执行者的参数.</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">arguments</span>&gt;</span>arg1 arg2 arg3<span class="tag">&lt;/<span class="name">arguments</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>-or-</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">arguments</span>&gt;</span></span><br><span class="line">  arg1</span><br><span class="line">  arg2</span><br><span class="line">  arg3</span><br><span class="line"><span class="tag">&lt;/<span class="name">arguments</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
+
+          <div style="text-align:center;color: #ccc;font-size:14px;">------------- 本文结束 <i class="fa fa-desktop"></i>
+            感谢阅读
+            -------------</div>
+
+          <!-- copyright -->
           
-          <li>
-            09-27
-            <i class="fa fa-pencil aria-hidden="true" style="padding: 7px;"></i>
-            <a href="/WinSW-将python文件部署成服务/" style="color: #0085a1">
-              <span>
-                ➾ 
-                Untitled
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            09-22
-            <i class="fa fa-pencil aria-hidden="true" style="padding: 7px;"></i>
-            <a href="/Github打不开/" style="color: #0085a1">
-              <span>
-                ➾ 
-                Github打不开
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            09-15
-            <i class="fa fa-pencil aria-hidden="true" style="padding: 7px;"></i>
-            <a href="/Gris/" style="color: #0085a1">
-              <span>
-                ➾ 
-                Gris
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <li>
-            04-17
-            <i class="fa fa-pencil aria-hidden="true" style="padding: 7px;"></i>
-            <a href="/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                ➾ 
-                Hexo-Theme-LiveMyLife
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
+          <!-- copyright start -->
+          <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Totoro
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://totoro.fun/WinSW-%E5%B0%86python%E6%96%87%E4%BB%B6%E9%83%A8%E7%BD%B2%E6%88%90%E6%9C%8D%E5%8A%A1/" title="">http://totoro.fun/WinSW-%E5%B0%86python%E6%96%87%E4%BB%B6%E9%83%A8%E7%BD%B2%E6%88%90%E6%9C%8D%E5%8A%A1/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://TotoroQwQ.github.io" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
 </div>
 
-      <!-- 如果开启评论功能 -->
-      
-    </div>
 
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <!-- <h5><a href="/about/">关于自己</a></h5> -->
-  <!-- <div class="short-about"> -->
-  <div >
 
-    <!-- 
-    <img id="avatar_pic" src="/img/avatar/Totoro.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-     -->
+<!-- tip end -->
+          <!-- copyright end -->
+          
 
-    
-    <a href="/about/">
-      <img id="avatar_pic" src="/img/avatar/Totoro.jpg" style="cursor:pointer" alt="avatar_pic" />
-      <!-- <div id="avatar_pic" class="" style="background-image: {{config['root']+config['sidebar-avatar']}};" /> -->
-    </a>
-    
+          <!-- page_end_tags -->
+          
+          <section>
 
-    
-    <p style="color: rgb(88, 87, 87);">我们一起大笑看看，可怕的东西就会跑光光了</p>
-    
+            <div class="page_end_tags" style="text-align: center;">
+              
+            </div>
+          </section>
+          
 
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
 
-      
-      <li>
-        <a target="_blank" href="https://github.com/TotoroQwQ">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
+          
+          <!-- Sharing Srtart -->
+          <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
 
-      
 
-      
+<script>
+  function setopenshare() {
+    let items = document.getElementsByClassName("social-share-li");
+    let list = Array.from(items);
+    list.forEach(item => {
+      if (item.style.display == "none") {
+        item.style.display = "inline-block";
+      } else {
+        item.style.display = "none";
+      }
+    })
+  }
+</script>
 
-      
+<div class="social-share" data-initialized="true"
+  data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper=""
+  align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li sharecontrol">
+      <a target="_blank" class="social-share-icon icon-reward">
+        <i class="fa fa-coffee" aria-hidden="true"></i>
 
-      
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-share" onclick="setopenshare()">
+        <i class="fa fa-share fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
 
-      
 
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/WVincen">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
+    <li class="social-share-li sharecontrol" style="display: none">
+      <a class="social-share-icon icon-share" onclick="setopenshare()">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li sharecontrol" style="display: none">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li sharecontrol" style="display: none">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li sharecontrol" style="display: none">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li sharecontrol" style="display: none">
+      <a target="_blank" class="social-share-icon"
+        href="mailto:?subject=&body=我很喜欢这篇文章！http://totoro.fun/WinSW-将python文件部署成服务/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
 
-      
-        <li>
-          <a target="_blank" href="http://weibo.com/WVincen">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-circle fa-stack-2x"></i>
-              <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true"
+  src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+          <!-- Sharing End -->
+          
+
+          <!-- Pager -->
+          
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+              <a href="/Github打不开/" rel="next" title="Github打不开">
+                <i class="fa fa-chevron-left"></i> Github打不开
+              </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+          
+
+
+
+
+
+        </div>
+
+        
+        <img src="/img/avatar/hr.png" alt="">
+        <div class="page_comment">
+          <!-- comments start -->
+          
+
+<div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="/js/comment/myvaline_beta1.0.js"></script>
+
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick';
+  guest = guest.split(',').filter(item => {
+    return GUEST.indexOf(item) > -1;
+  });
+
+  new Valine({
+    el: '.valine_comment',
+    verify: verify ,
+    notify: notify ,
+    appId: 'NvbLdsBj5NQ4WdWTAHIPUxIr-gzGzoHsz',
+    appKey: 'DIO4Q7w8oBYT3wgb2jAP2SHO',
+    placeholder: '此方有酒，请君慢叙',
+    avatar: 'monsterid',
+    guest_info: guest,
+    pageSize: '10' || 10,
+    requiredFields: ['nick'],
+    enableQQ: true
+  });
+</script>
+
+
+
+
+
+
+<!-- 1. gitalk comment -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+          <!-- comments end -->
+          <hr>
+        </div>
         
 
-    </ul>
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+
+
+    </div>
   </div>
-</section>
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">最近博文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../WinSW-%E5%B0%86python%E6%96%87%E4%BB%B6%E9%83%A8%E7%BD%B2%E6%88%90%E6%9C%8D%E5%8A%A1/">
-      <li>(no title)</li>
-    </a>
-    
-    <a href="../../Github%E6%89%93%E4%B8%8D%E5%BC%80/">
-      <li>Github打不开</li>
-    </a>
-    
-    <a href="../../Gris/">
-      <li>Gris</li>
-    </a>
-    
-    <a href="../../Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
+</article>
 
 
-        <hr>
-    
-        <!-- Featured Tags -->
 
-<section>
-  <h5><a href="/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#开发笔记" title="开发笔记" rel="1">开发笔记</a>
-    
-    
-    
-    <a href="/tags/#Game" title="Game" rel="1">Game</a>
-    
-    
-    
-    <a href="/tags/#随笔" title="随笔" rel="1">随笔</a>
-    
-    
-    
-    <a href="/tags/#hexo" title="hexo" rel="1">hexo</a>
-    
-    
-  </div>
-</section>
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
 
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">文章分类</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#笔记">
-      <li>笔记</li>
-    </a>
-    
-    <a href="/categories/#Hexo">
-      <li>Hexo</li>
-    </a>
-    
-    <a href="/categories/#Theme">
-      <li>Theme</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Archives -->
-
-<h5><a href="/archives/">时间归档</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2021/09/">September 2021</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="../../archives/2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5><a href="/">链友</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://v-vincen.life/" target="_blank">V_Vincen</a></li>
-  
-  <li><a href="http://beantech.org" target="_blank">Bean Tech</a></li>
-  
-  <li><a href="http://huangxuan.me" target="_blank">Hux Blog</a></li>
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
-</ul>
-
-
-        <hr>
-    
-</div>
-
-
-    
-  </div>
-</div>
+<!-- anchorjs end -->
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
