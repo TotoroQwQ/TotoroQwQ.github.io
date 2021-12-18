@@ -504,12 +504,22 @@ pre code {
 .intro-header .post-heading h1,
 .intro-header .page-heading h1{
   font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif;
+  text-shadow: 0 0 2px #a3a3a3, 0 0 5px #0dff01, 0 0 7px #040404;
+}
+
+.intro-header .site-heading h2,
+.intro-header .post-heading h2,
+.intro-header .page-heading h2{
+  font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif;
+  text-shadow: 0 0 1px #000000,  0 0 3px #0dff01 !important;
 }
 
 .intro-header .site-heading .subheading,
 .intro-header .post-heading .subheading,
 .intro-header .page-heading .subheading{
   font-family: "Biaodian Pro Serif GB", "Numeral LF Serif", Didot, "Times New Roman", "Han Kaiti GB", cursive, serif !important;
+  text-shadow: 0 0 1px #6b6b6b;
+
 }
 
 @media only screen and (min-width: 840px) {
@@ -1012,6 +1022,11 @@ img::-moz-selection {
   text-decoration: none;
   margin: 0 1px;
   margin-bottom: 6px;
+}
+
+.tags .post-tag{
+  font-size: 20px !important;
+  text-shadow: -1px 1px 10px rgb(51, 82, 51);
 }
 
 .tags a:hover,

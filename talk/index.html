@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://totoro.fun/about/">
+  <link rel="canonical" href="http://totoro.fun/talk/">
   <title>
     
-      About | 龙猫的森林
+      Talks | 龙猫的森林
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -380,15 +380,15 @@
   .body--light {
     /* intro-header */
     --intro-header-background-image-url-home: url('/img/header_img/totoro.jpg');
-    --intro-header-background-image-url-post: url('img/header_img/bg4.jpg');
-    --intro-header-background-image-url-page: url('/img/header_img/bg4.jpg');
+    --intro-header-background-image-url-post: url('img/header_img/bg6.jpg');
+    --intro-header-background-image-url-page: url('/img/header_img/bg6.jpg');
     --intro-header-background-image-url-default: url('/img/header_img/bg.jpg');
   }
 
   .body--dark {
     --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/totoro.jpg');
-    --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/bg4.jpg');
-    --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/bg4.jpg');
+    --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('img/header_img/bg6.jpg');
+    --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/bg6.jpg');
     --intro-header-background-image-url-default: url('/img/header-img/bg.jpg');
   }
 
@@ -396,7 +396,7 @@
     
       /*page*/
       background-image: var(--intro-header-background-image-url-page);
-      /* background-image: url('/img/header_img/bg4.jpg'); */
+      /* background-image: url('/img/header_img/bg6.jpg'); */
       
   }
 
@@ -421,10 +421,11 @@
           
           <div class="site-heading">
             
-            <h1></i>本站资料</h1>
+
+            <h1>Talks</h1>
             
             <!--<hr class="small">-->
-            <span class="subheading">要么读书，要么旅行，身体和灵魂总要有一个在路上</span>
+            <span class="subheading">平淡的日子是阳光的碎片，收藏起来，足以温暖自己</span>
           </div>
           
         </div>
@@ -480,51 +481,76 @@
                 post-container
             ">
 
-      <h2 id="That’s-Why">That’s Why</h2>
-<blockquote>
-<p>突然觉得时间飞逝<br>
-任何事情，任何心情<br>
-一旦消逝，便再不起半点涟漪<br>
-突然就有浮云苍狗之念<br>
-便起燕过留痕之心</p>
-<p>于此记录</p>
-</blockquote>
-<h2 id="Site-Info">Site Info</h2>
-<p><img src="/img/header_img/bg3.jpg" alt=""></p>
-<blockquote>
-<p>2021.8.15  一念起</p>
-<p>想做一个个人网站,记录工作笔记和个人心情<br>
-接触hexo，接触next主题</p>
-</blockquote>
-<blockquote>
-<p>2021.8.27 停笔研磨</p>
-<p>改造好next主题<br>
-布置到github，网速太慢<br>
-布置到gitee，不能播放视频<br>
-觉得next主题没有页头，不够好看<br>
-因其他事情暂停布置</p>
-</blockquote>
-<blockquote>
-<p>2021.9.15 蘸墨起笔</p>
-<p>深夜冲动，购买域名<br>
-寻找其他主题，发现livemylife<br>
-重新改造主题</p>
-</blockquote>
-<blockquote>
-<p>2021.9.21 落款</p>
-<p>基本改造完成<br>
-布置到cooding，配置本站</p>
-</blockquote>
-<h2 id="Future">Future</h2>
-<p>后续打算增加相册和动态，然后看弄一个后台还是怎么，让发布变简单一点</p>
-<h2 id="Wish">Wish</h2>
-<p>希望将来的自己坚持记录，不负此时的我。</p>
-<blockquote>
-<p>Yesterday is history<br>
-Tomorrow is a mystery<br>
-Today is god’s gift, thats why its called present</p>
-</blockquote>
-
+      <!-- <link rel="stylesheet" href="/css/talks.css"> -->
+<!-- 引用 artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- 存放说说的容器 -->
+<div id="artitalk_main"></div>
+<!-- <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+        <div id="shuoshuo_content">
+            <ul class="cbp_tmtimeline">
+                <li> <span class="shuoshuo_author_img"><img src="https://i.postimg.cc/5NJhFVSg/Totoro.png"
+                            class="avatar avatar-48 zhuan" width="48" height="48"></span>
+                    <a class="cbp_tmlabel" href="">
+                        <p></p>
+                        <p>想要开学，想吃火锅，想吃烧烤，想吃蟹肉煲，想吃鸡脚米线，想喝奶茶~</p>
+                        <iframe frameborder="no" marginwidth="0" marginheight="0" width=330 height=86
+                            src="//music.163.com/outchain/player?type=2&id=1338809890&auto=1&height=66"></iframe>
+                        <p></p>
+                        <p class="shuoshuo_time"><i class="fa fa-clock-o"></i>
+                            2020年2月25日
+                        </p>
+                    </a>
+                </li>
+                <li> <span class="shuoshuo_author_img"><img src="https://i.postimg.cc/5NJhFVSg/Totoro.png"
+                            class="avatar avatar-48 zhuan" width="48" height="48"></span>
+                    <a class="cbp_tmlabel" href="">
+                        <p></p>
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582636990314&di=2421dcd34e1cc519b7f7f9559afbe7b1&imgtype=0&src=http%3A%2F%2Fpics1.baidu.com%2Ffeed%2Fb17eca8065380cd7531865282a19873258828151.jpeg%3Ftoken%3Dce6f76a2b9dc38c02c91acfc2a4bb8d8%26s%3D3C79EF14C510746516F547E003007036"
+                            height="200" width="100" />
+                        <p>武汉加油！中国加油！</p>
+                        <p></p>
+                        <p class="shuoshuo_time"><i class="fa fa-clock-o"></i>
+                            2020年2月25日
+                        </p>
+                    </a>
+                </li>
+                <li> <span class="shuoshuo_author_img"><img src="https://i.postimg.cc/5NJhFVSg/Totoro.png"
+                            class="avatar avatar-48 zhuan" width="48" height="48"></span>
+                    <a class="cbp_tmlabel" href="">
+                        <p></p>
+                        <p>第一个说说</p>
+                        <p></p>
+                        <p class="shuoshuo_time"><i class="fa fa-clock-o"></i>
+                            2020年2月25日
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</div> -->
+<script type="text/javascript">
+    // (function () {
+    //     var oldClass = "";
+    //     var Obj = "";
+    //     $(".cbp_tmtimeline li").hover(function () {
+    //         Obj = $(this).children(".shuoshuo_author_img");
+    //         Obj = Obj.children("img");
+    //         oldClass = Obj.attr("class");
+    //         var newClass = oldClass + " zhuan";
+    //         Obj.attr("class", newClass);
+    //     }, function () {
+    //         Obj.attr("class", oldClass);
+    //     })
+    // })
+    new Artitalk({
+        appId: 'qjiBqDtjOlqReORft39Ko5jX-MdYXbMMI', // Your LeanCloud appId
+        appKey: '5vie3yWoSgmT9h52auy34mVa', // Your LeanCloud appKey
+        pageSize: 20,
+        shuoPla: '只有totoro可以发表说说哦！'
+    })
+</script>
 
       <!-- 如果开启评论功能 -->
       
