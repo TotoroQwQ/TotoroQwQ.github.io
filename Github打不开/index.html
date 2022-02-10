@@ -3,126 +3,137 @@
 
 <!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
 <head>
+  <script>
+    (function () {
+      if ('') {
+        console.log('')
+        if (prompt('请输入文章密码') !== '') {
+          alert('密码错误');
+          history.back();
+        }
+      }
+    })();
+  </script>
   <!-- Google Analytics -->
   
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-      gtag('config', 'UA-xxxxxx-xx');
-    </script>
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
   
 
   <!-- Baidu Tongji -->
   
-    <script type="text/javascript">
-      // Originial
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
   
 
   <!-- Baidu Push -->
   
-    <script>
-      (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-      })();
-    </script>
+  <script>
+    (function () {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
   
 
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
-  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="description" content="记录成长，记录生活"/>
-  <meta name="keyword" content="totoro,龙猫,livemylife,IT blog,Blog"/>
-  <link rel="shortcut icon" href="/img/avatar/icon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="记录成长，记录生活" />
+  <meta name="keyword" content="totoro,龙猫,livemylife,IT blog,Blog" />
+  <link rel="shortcut icon" href="/img/avatar/icon.png" />
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
 
   
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/beantech.min.css"/>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
 
-    <!-- Pygments Highlight CSS -->
-    <link rel="stylesheet" href="/css/highlight.css"/>
-    <link rel="stylesheet" href="/css/widget.css"/>
-    <link rel="stylesheet" href="/css/rocket.css"/>
-    <link rel="stylesheet" href="/css/signature.css"/>
-    <link rel="stylesheet" href="/css/catalog.css"/>
-    <link rel="stylesheet" href="/css/livemylife.css"/>
+  <!-- Pygments Highlight CSS -->
+  <link rel="stylesheet" href="/css/highlight.css" />
+  <link rel="stylesheet" href="/css/widget.css" />
+  <link rel="stylesheet" href="/css/rocket.css" />
+  <link rel="stylesheet" href="/css/signature.css" />
+  <link rel="stylesheet" href="/css/catalog.css" />
+  <link rel="stylesheet" href="/css/livemylife.css" />
 
-    
-      <!-- wave start -->
-      <link rel="stylesheet" href="/css/wave.css"/>
-      <!-- wave end -->
-    
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
 
-    
-      <!-- top start (article top hot config) -->
-      <link rel="stylesheet" href="/css/top.css"/>
-      <!-- top end -->
-    
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
 
-    
-      <!-- ThemeColor start -->
-      <link rel="stylesheet" href="/css/scroll.css"/>
-      <!-- ThemeColor end -->
-    
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
 
-    
-      <!-- viewer start (Picture preview) -->
-      <link rel="stylesheet" href="/css/viewer.min.css"/>
-      <!-- viewer end -->
-    
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
 
-    
-      <!-- Search start -->
-      <link rel="stylesheet" href="/css/search.css"/>
-      <!-- Search end -->
-    
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
 
-    
-      <!-- ThemeColor start -->
-      <link rel="stylesheet" href="/css/themecolor.css"/>
-      <!-- ThemeColor end -->
-    
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
 
-    
+  
 
-    
-      <!-- gitalk start -->
-      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
-      <link rel="stylesheet" href="/css/gitalk.css"/>
-      <!-- gitalk end -->
-    
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
   
 
   <!-- Custom Fonts -->
@@ -142,11 +153,10 @@
   <link rel="canonical" href="http://totoro.fun/Github打不开/">
   <title>
     
-      Github打不开 | 龙猫的森林
+    Github打不开 | 龙猫的森林
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
-
 
 <!-- hack iOS CSS :active style -->
 
@@ -291,17 +301,6 @@
           
           
           <li>
-            <a href="/talk/">
-              
-              <i class="fa fa-fw fa-pencil"></i>点滴
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/categories/">
               
               <i class="fa fa-fw fa-th"></i>分类
@@ -313,9 +312,31 @@
           
           
           <li>
+            <a href="/publish/">
+              
+              <i class="fa fa-fw fa-edit"></i>写文章
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
             <a href="/tags/">
               
               <i class="fa fa-fw fa-tags"></i>标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/talk/">
+              
+              <i class="fa fa-fw fa-pencil"></i>点滴
               
               
             </a>
@@ -885,7 +906,7 @@
         <p class="copyright text-muted footer_p">
           Copyright &copy;
           Totoro
-          2021
+          2022
           <br>
           <i class="fa fa-eye"></i>
           <span>
